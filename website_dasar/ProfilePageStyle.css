@@ -1,0 +1,258 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+:root {
+    /* Font */
+    --font-poppins: 'Poppins', sans-serif;
+  
+    /* Font Sizes */
+    --explore-size: 2.08vw;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-3xl: 22px;
+    --font-size-21xl: 40px;
+    --font-size-5xl: 24px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkblue: #2b3467;
+    --color-black: #000;
+    --color-gainsboro: #d9d9d9;
+    --color-lightblue: #b7d3df;
+  
+    /* Border Radiuses */
+    --br-mini: 15px;
+    --br-3xs: 10px;
+
+    /* Jarak Font why */
+    --first-row-spacing: 1px;
+    --second-row-spacing: 5px;
+}
+
+.custom-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(78, 142, 192, 0.7);
+    z-index: 1;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: var(--font-poppins);
+    font-size: calc(var(--font-size-base) * 0.85);
+    font-weight: 600;
+    letter-spacing: 5%;
+    color: var(--color-darkblue);
+}
+
+.navbar-nav.spaced .nav-item:not(:last-child) .nav-link {
+    margin-right: 70px;
+}
+
+.login-icon img {
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .login-icon img {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .login-icon img {
+        width: 10%; /* adjust as needed */
+    }
+}
+
+/* profilePageCSS */
+
+.profilePage {
+    background-color: #DDE8F0; 
+    /*#DDE8F0*/
+}
+
+.profilePictureContainer {
+    text-align: center;
+}
+
+.profilePicture {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #2b3467;
+}
+
+.profileNickname {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    display: block;
+    text-align: center;
+}
+
+.profileNumber {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    display: block;
+}
+
+.container {
+    width: 50%;
+    height: 62px;
+    background-color: #ffffff;
+    border: 1px solid rgba(107, 143, 170, 0.5);;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    margin-left: 25%;
+}   
+
+.profileTitle {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    color: #000000;text-align: left;
+    margin-left: 15px;
+    margin-top: 7px;
+    margin-bottom: 1px;
+}
+
+.profileContent {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #2B3467;
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.button {
+    justify-content: center;
+    text-align: center
+}
+
+.editProfileButton {
+    width: 156px;
+    height: 45px;
+    background: #4E8EC0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    border: none;
+}
+
+.editProfileIcon {
+    width: 24px;
+    height: 24px;
+}
+
+h1 {
+    color: blue;
+}
+
+/* Cancel Button */
+.cancelButton {
+    position: absolute;
+    margin-top: 40px;
+    width: 120px;
+    height: 45px;
+    left: 40%;
+    top: 141%;
+    background: #F70E0E;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Confirm Button */
+.confirmButton {
+    position: absolute;
+    margin-top: 40px;
+    width: 120px;
+    height: 45px;
+    left: 50%;
+    top: 141%;
+    background: #4E8EC0;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    border: none;
+}
+
+.profilePictureContainer {
+    text-align: center;
+    position: relative;
+}
+
+#iconButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hidden {
+    display: none;
+  }
+  

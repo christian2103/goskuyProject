@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>goskuy - Jalan-jalan yuk! :D</title>
+    <!-- Select2 CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+
+<!-- Select2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <!-- Script -->
+    <script>
+        const titleText = ["goskuy", "Jalan-jalan yuk!", "goskuy", "Dilihat,", "dibaca,", "diingat."];
+        let counter = 0;
+        setInterval(function () {
+            document.title = titleText[counter];
+            counter = (counter + 1) % titleText.length;
+        }, 2000);
+    </script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="booking.html"><img src="./Assets/GOSKUY.png" alt="Logo" style="width: 80%; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto spaced">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#offer-section">Offers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+                </ul>
+                <a href="login.html" class="login-icon d-none d-lg-block"><img src="./Assets/profile-button.png" alt="Login" style="width: 80%; height: auto;"></a>
+                <a href="login.html" class="login-icon d-lg-none"><img src="./Assets/profile-button.png" alt="Login" style="width: 15%; height: auto;"></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Plane background -->
+    <div class="plane-background-section">
+        <!-- ... -->
+<body>
+    <!-- ... -->
+    <div class="container">
+        <p class="profileTitle">From</p>
+        <select class="profileContent">
+            <option value="">Select City</option>
+            <option value="Jakarta, DKI Jakarta">Jakarta, DKI Jakarta</option>
+            <option value="Bandung, West Java">Bandung, West Java</option>
+            <option value="Surabaya, East Java">Surabaya, East Java</option>
+            <option value="Yogyakarta, DI Yogyakarta">Yogyakarta, DI Yogyakarta</option>
+            <option value="Medan, North Sumatra">Medan, North Sumatra</option>
+            <option value="Makassar, South Sulawesi">Makassar, South Sulawesi</option>
+            <option value="Denpasar, Bali">Denpasar, Bali</option>
+            <option value="Manado, North Sulawesi">Manado, North Sulawesi</option>
+            <option value="Balikpapan, East Kalimantan">Balikpapan, East Kalimantan</option>
+            <option value="Jayapura, Papua">Jayapura, Papua</option>
+        </select>
+    </div>
+    <br>
+    <div class="container">
+        <p class="profileTitle">Destination</p>
+        <select class="profileContent">
+            <option value="">Select City</option>
+            <option value="Jakarta, DKI Jakarta">Jakarta, DKI Jakarta</option>
+            <option value="Bandung, West Java">Bandung, West Java</option>
+            <option value="Surabaya, East Java">Surabaya, East Java</option>
+            <option value="Yogyakarta, DI Yogyakarta">Yogyakarta, DI Yogyakarta</option>
+            <option value="Medan, North Sumatra">Medan, North Sumatra</option>
+            <option value="Makassar, South Sulawesi">Makassar, South Sulawesi</option>
+            <option value="Denpasar, Bali">Denpasar, Bali</option>
+            <option value="Manado, North Sulawesi">Manado, North Sulawesi</option>
+            <option value="Balikpapan, East Kalimantan">Balikpapan, East Kalimantan</option>
+            <option value="Jayapura, Papua">Jayapura, Papua</option>
+        </select>
+    </div>
+    <br>
+    <div class="container">
+        <p class="profileTitle">Capacity</p>
+        <select class="profileContent">
+            <option value="">Select Slot</option>
+            <option value="1-5">1 - 5 slots</option>
+            <option value="5-10">5 - 10 slots</option>
+            <option value="10-15">10 - 15 slots</option>
+            <option value="15-20">15 - 20 slots</option>
+            <option value="25+">More than 25 slots</option>
+        </select>
+    </div>
+    <!-- ... -->
+</body>
+<!-- ... -->
+
+    </div>
+
+    <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+     <script>
+         document.querySelector('a[href="#about-section"]').addEventListener('click', function (e) {
+             e.preventDefault();
+             const offerSection = document.querySelector('#offer-section');
+             const midpoint = offerSection.offsetHeight / 2;
+             window.scrollTo({ top: offerSection.offsetTop + midpoint, behavior: 'smooth' });
+         });
+     
+         function validateForm(e) {
+     e.preventDefault();
+         }
+     </script>
+</body>
+
+</html>

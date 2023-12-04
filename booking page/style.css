@@ -1,0 +1,229 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+:root {
+    /* Font */
+    --font-poppins: 'Poppins', sans-serif;
+  
+    /* Font Sizes */
+    --explore-size: 2.08vw;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-3xl: 22px;
+    --font-size-21xl: 40px;
+    --font-size-5xl: 24px;
+    --font-size-xl: 20px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-darkblue: #2b3467;
+    --color-black: #000;
+    --color-gainsboro: #d9d9d9;
+    --color-lightblue: #b7d3df;
+  
+    /* Border Radiuses */
+    --br-mini: 15px;
+    --br-3xs: 10px;
+
+    /* Jarak Font why */
+    --first-row-spacing: 1px;
+    --second-row-spacing: 5px;
+}
+
+.custom-navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(78, 142, 192, 0.7);
+    z-index: 2;
+}
+
+.navbar-brand {
+    padding-left: 20px;
+}
+
+.navbar-nav {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-family: var(--font-poppins);
+    font-size: calc(var(--font-size-base) * 0.85);
+    font-weight: 600;
+    letter-spacing: 5%;
+    color: var(--color-white);
+}
+
+.navbar-nav.spaced .nav-item:not(:last-child) .nav-link {
+    margin-right: 70px;
+}
+
+.login-icon img {
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .login-icon img {
+        width: 10%;
+    }
+}
+
+.plane-background-section {
+    background-image: url('./Assets/Booking-bg.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    min-height: calc(100% + 70px);
+    position: relative;
+    padding-top: 70px;
+}
+
+.rectangle-31 {
+    background: #4E8EC0;
+    padding: 20px;
+    position: fixed; /* make the div stick to a position */
+    left: 0; /* align it to the left */
+    top: 0; /* align it to the top */
+    height: 100%; /* make it span the full viewport height */
+    width: 300px; /* set a width for the sidebar */
+    overflow-y: auto; /* make it scrollable in case of overflow */
+    z-index: 1; /* put the sidebar on top of anything else */
+}
+
+.rectangle-31 .form-label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #E5E1E7;
+}
+
+.rectangle-31 .form-control {
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 10px;
+}
+
+
+.from {
+    position: absolute;
+    width: 96.98px;
+    height: 21.16px;
+    left: 20px;
+    top: 114px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #E5E1E7;
+}
+
+.destination {
+    position: absolute;
+    width: 133px;
+    height: 21px;
+    left: 29px;
+    top: 185px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #E5E1E7;
+}
+
+.rectangle-32 {
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    left: 45px;
+    top: 141px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.rectangle-33 {
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    left: 45px;
+    top: 215px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.capacity {
+    position: absolute;
+    width: 96.98px;
+    height: 21.16px;
+    left: 37px;
+    top: 258px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #E5E1E7;
+}
+
+.date {
+    position: absolute;
+    width: 74px;
+    height: 21px;
+    left: 29px;
+    top: 331px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #E5E1E7;
+}
+
+.rectangle-34 {
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    left: 45px;
+    top: 287px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.rectangle-35 {
+    position: absolute;
+    width: 250px;
+    height: 35px;
+    left: 45px;
+    top: 360px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.ic-round-keyboard-arrow-down {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 259px;
+    top: 143px;
+    border-radius: 10px;
+}
+

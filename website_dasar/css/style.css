@@ -1,0 +1,163 @@
+:root{
+    --fwsemibold: 600;
+    --fwregular:400;
+    font-family: 'MuseoModerno', cursive;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.login{
+    height: 100vh;
+}
+
+h1{
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+letter-spacing: 0.05em;
+color: #000000;
+mix-blend-mode: normal;
+margin-bottom: 22px;
+}
+
+.login-form label{
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #000000;
+mix-blend-mode: normal;
+margin-top:22px ;
+}
+
+.login-form input{
+background: #FFFFFF;
+box-shadow: 0px 6px 4px #3F3F41;
+border-radius: 10px;
+margin: 5px 0 15px 0;
+}
+
+.login-form .signin{
+width:100%;
+background: #333C71;
+border-radius: 15px;
+color: #ffffff;
+margin: 25px 0 20px 0;
+}
+
+.login-form span{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #000000;
+mix-blend-mode: normal;
+display: block;
+}
+
+.login-form span a{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-left{
+    width: 960px;
+    height: 560px;
+    border-radius: 10px;
+}
+
+.login-left h1{
+font-family: MuseoModerno;
+font-style: normal;
+font-weight: 900;
+font-size: 126px;
+line-height: 200px;
+text-align: center;
+color: transparent;
+margin: 55% 0 55% 0;
+-webkit-text-stroke: 1px white;
+-webkit-background-clip: text;
+animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.login-left h2{
+    font-family: MuseoModerno;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 105px;
+    line-height: 200px;
+    justify-content: center;
+    text-align: center;
+    color: transparent;
+    margin: 55% 0 55% 0;
+    -webkit-text-stroke: 1px white;
+    -webkit-background-clip: text;
+}
+
+
+.login-left2{
+    width: 960px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.login-left2 h1{
+    font-style: normal;
+    font-family: MuseoModerno;
+    font-weight: 900;
+    font-size: 126px;
+    line-height: 200px;
+    text-align: center;
+    color: transparent;
+    margin: 55% 0 55% 0;
+    -webkit-text-stroke: 1px white;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    animation: back 20s linear infinite;
+    }
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+
+    .login-left2 h2{
+        font-family: MuseoModerno;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 110px;
+        line-height: 200px;
+        text-align: center;
+        color: transparent;
+        margin: 55% 0 55% 0;
+        -webkit-text-stroke: 1px white;
+        -webkit-background-clip: text;
+    }
+    
+
+.login-form #email_error,
+.login-form #pass_error{
+    margin-top: 5px;
+    width: 345px;
+    font-size: 18px;
+    color: #C62828;
+    display: none;
+}
+
+#result{
+    color: red;
+    font-weight: 600;
+    position: relative;
+    top: 25px;
+}
